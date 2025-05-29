@@ -1,0 +1,71 @@
+# _data/navigation.yml
+- title: Home
+  url: /
+  
+- title: Computer System
+  children:
+    - title: System I
+      children:
+        - title: 数据编码
+          url: /Computer_System/System1/lecture01/
+        - title: 数字逻辑基础
+          url: /Computer_System/System1/lecture02/
+        - title: 组合逻辑电路
+          url: /Computer_System/System1/lecture03/
+        - title: 运算单元
+          url: /Computer_System/System1/lecture04/
+        - title: 时序逻辑电路
+          url: /Computer_System/System1/lecture05/
+        - title: ISA
+          url: /Computer_System/System1/lecture06/
+        - title: CPU
+          url: /Computer_System/System1/lecture07/
+        - title: 多周期CPU
+          url: /Computer_System/System1/lecture08/
+
+- title: Data Structure
+  children:
+    - title: 概述
+      url: /Data_Structure/
+    - title: Stack and Queue
+      url: /Data_Structure/StackandQueue/
+    - title: Tree
+      url: /Data_Structure/Tree/
+    - title: Graph
+      url: /Data_Structure/Graph/
+    - title: Sort
+      url: /Data_Structure/Sort/
+    - title: Hash
+      url: /Data_Structure/Hash/
+    - title: PTA Problems
+      url: /Data_Structure/pta/
+
+- title: Discrete Mathematics
+  children:
+    - title: 逻辑与证明
+      url: /Discrete_Mathematics/chapter1/
+    - title: 基本结构
+      url: /Discrete_Mathematics/chapter2/
+    - title: 算法
+      url: /Discrete_Mathematics/chapter3/
+    - title: 数论
+      url: /Discrete_Mathematics/chapter4/
+    - title: 归纳与递归
+      url: /Discrete_Mathematics/chapter5/
+    - title: 计数
+      url: /Discrete_Mathematics/chapter6/
+    - title: 高级计数
+      url: /Discrete_Mathematics/chapter8/
+    - title: 关系
+      url: /Discrete_Mathematics/chapter9/
+    - title: 图
+      url: /Discrete_Mathematics/chapter10/
+    - title: 树
+      url: /Discrete_Mathematics/chapter11/
+
+- title: mkdocs
+  children:
+    - title: 主题
+      url: /mkdocs/theme/
+    - title: Latex
+      url: /mkdocs/Latex/

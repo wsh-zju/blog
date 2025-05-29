@@ -6,6 +6,7 @@ baseurl: ""  # 如果是项目仓库，改为 "/repo-name"
 # 主题配置
 theme: minima
 plugins:
+  - jekyll-menus
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
