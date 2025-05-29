@@ -1,0 +1,47 @@
+title: Lucy Wisteria's Blog
+description: Welcome to Lucy Wisteria's Blog!
+url: "https://yourname.github.io"  # 替换为你的 GitHub Pages 地址
+baseurl: ""  # 如果是项目仓库，改为 "/repo-name"
+
+# 主题配置
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-archives
+
+# Markdown 解析
+markdown: kramdown
+kramdown:
+  input: GFM  # 支持 GitHub Flavored Markdown
+  syntax_highlighter: rouge
+
+# 分页配置
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# SEO 优化
+seo:
+  title: true
+  description: true
+  image: "/assets/logo.png"
+
+# 作者信息
+author:
+  name: "Lucy Wisteria"
+  email: "2107633734@qq.com"
+  wechat: "18103573921"
+
+# 归档配置
+jekyll-archives:
+  enabled: true
+  layouts:
+    year: archive_year
+    month: archive_month
+    day: archive_day
+  permalinks:
+    year: '/archives/:year/'
+    month: '/archives/:year/:month/'
+    day: '/archives/:year/:month/:day/'
