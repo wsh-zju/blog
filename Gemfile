@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 # 核心依赖
-gem "jekyll", "~> 4.3"
 gem "github-pages", group: :jekyll_plugins  # 兼容 GitHub Pages 的插件集合
 
 # 常用插件
