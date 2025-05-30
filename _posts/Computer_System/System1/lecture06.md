@@ -1,3 +1,9 @@
+---
+layout: post
+math: true
+---
+
+
 ## ISA
 ### Introduction
 

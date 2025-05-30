@@ -1,0 +1,11 @@
+/* 将 Logo 变成圆形 */
+.md-header__button.md-logo img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 将 Favicon 变成圆形（部分主题生效） */
+.favicon img {
+    border-radius: 50%;
+    object-fit: cover;
+}

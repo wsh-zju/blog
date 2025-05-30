@@ -1,3 +1,10 @@
+---
+layout: post
+---
+
+
+
+
 ## 简单排序
 ### 选择排序 [Selection Sort.c](code_docu/SelectionSort.c)
 ```c

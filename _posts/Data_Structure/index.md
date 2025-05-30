@@ -1,3 +1,8 @@
+---
+layout: post
+---
+
+
 
 # 数据结构基础
 ## Data Structure

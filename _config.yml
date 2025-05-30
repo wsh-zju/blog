@@ -1,7 +1,7 @@
 title: Lucy Wisteria's Blog
 description: Welcome to Lucy Wisteria's Blog!
-url: "https://yourname.github.io"  # 替换为你的 GitHub Pages 地址
-baseurl: ""  # 如果是项目仓库，改为 "/repo-name"
+url: "https://wsh-zju.github.io/blog/"  # 替换为你的 GitHub Pages 地址
+baseurl: "https://github.com/wsh-zju/blog"  
 
 # 主题配置
 theme: minima
@@ -19,6 +19,13 @@ kramdown:
   input: GFM  # 支持 GitHub Flavored Markdown
   syntax_highlighter: rouge
 
+defaults:
+  - scope:
+      path: "" # 所有
+    values:
+      layout: default
+      comments: true # 默认开启评论
+  
 # 分页配置
 paginate: 5
 paginate_path: "/blog/page:num/"
@@ -35,6 +42,11 @@ author:
   email: "2107633734@qq.com"
   wechat: "18103573921"
 
+
+sass:
+  sass_dir: assets/css
+  style: compressed
+  
 # 归档配置
 jekyll-archives:
   enabled: true

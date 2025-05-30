@@ -1,3 +1,9 @@
+---
+layout: post
+---
+
+
+
 ## English
 |English|Chinese|English|Chinese|English|Chinese|
 |:--:|:--:|:--:|:--:|:--:|:--:|

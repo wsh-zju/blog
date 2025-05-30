@@ -1,3 +1,9 @@
+---
+layout: post
+---
+
+
+
 !!! note "Notice!"
     以下代码均为伪代码！
 

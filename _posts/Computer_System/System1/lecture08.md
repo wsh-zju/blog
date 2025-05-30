@@ -1,3 +1,9 @@
+---
+layout: post
+math: true
+---
+
+
 ## 单周期与多周期CPU
 ### 单周期CPU
 - 特点：

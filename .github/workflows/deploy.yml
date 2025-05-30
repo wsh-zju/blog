@@ -1,39 +1,28 @@
-name: Deploy Jekyll Docs to GitHub Pages
+name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: [ "main" ]  # 触发分支（根据你的主分支名称调整）
+    branches: ["main"]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # 允许写入生成的静态文件
-
     steps:
-      # 1. 拉取代码
-      - uses: actions/checkout@v4
-
-      # 2. 设置 Ruby 环境
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
         with:
-          ruby-version: '3.1'  # 兼容 Jekyll 4.x
-          bundler-cache: true  # 自动缓存依赖
-
-      # 3. 安装依赖
-      - name: Install dependencies
-        run: |
-          gem install bundler
-          bundle install
-
-      # 4. 构建静态网站
-      - name: Build site
-        run: bundle exec jekyll build --destination ./_site
-
-      # 5. 部署到 GitHub Pages
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses: ruby/setup-ruby@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site  # 指定构建输出目录
+          ruby-version: 3.1
+          bundler-cache: true
+      - run: bundle exec jekyll build --baseurl "${{ github.event.repository.name }}"
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./_site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
