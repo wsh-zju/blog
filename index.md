@@ -1,5 +1,6 @@
 ---
-title:Home
+title: Home
+layout: default
 ---
 # ヾ(＠^∇^＠)ノ
 # Welcome to Lucy Wisteria's Notebook!
