@@ -1,71 +1,71 @@
 # _data/navigation.yml
 - title: Home
-  url: /
+  url: /index.md
   
 - title: Computer System
   children:
     - title: System I
       children:
         - title: 数据编码
-          url: /Computer_System/System1/lecture01/
+          url: /Computer_System/System1/lecture01.md
         - title: 数字逻辑基础
-          url: /Computer_System/System1/lecture02/
+          url: /Computer_System/System1/lecture02.md
         - title: 组合逻辑电路
-          url: /Computer_System/System1/lecture03/
+          url: /Computer_System/System1/lecture03.md
         - title: 运算单元
-          url: /Computer_System/System1/lecture04/
+          url: /Computer_System/System1/lecture04.md
         - title: 时序逻辑电路
-          url: /Computer_System/System1/lecture05/
+          url: /Computer_System/System1/lecture05.md
         - title: ISA
-          url: /Computer_System/System1/lecture06/
+          url: /Computer_System/System1/lecture06.md
         - title: CPU
-          url: /Computer_System/System1/lecture07/
+          url: /Computer_System/System1/lecture07.md
         - title: 多周期CPU
-          url: /Computer_System/System1/lecture08/
+          url: /Computer_System/System1/lecture08.md
 
 - title: Data Structure
   children:
     - title: 概述
-      url: /Data_Structure/
+      url: /Data_Structure/index.md
     - title: Stack and Queue
-      url: /Data_Structure/StackandQueue/
+      url: /Data_Structure/StackandQueue.md
     - title: Tree
-      url: /Data_Structure/Tree/
+      url: /Data_Structure/Tree.md
     - title: Graph
-      url: /Data_Structure/Graph/
+      url: /Data_Structure/Graph.md
     - title: Sort
-      url: /Data_Structure/Sort/
+      url: /Data_Structure/Sort.md
     - title: Hash
-      url: /Data_Structure/Hash/
+      url: /Data_Structure/Hash.md
     - title: PTA Problems
-      url: /Data_Structure/pta/
+      url: /Data_Structure/pta.md
 
 - title: Discrete Mathematics
   children:
     - title: 逻辑与证明
-      url: /Discrete_Mathematics/chapter1/
+      url: /Discrete_Mathematics/chapter1.md
     - title: 基本结构
-      url: /Discrete_Mathematics/chapter2/
+      url: /Discrete_Mathematics/chapter2.md
     - title: 算法
-      url: /Discrete_Mathematics/chapter3/
+      url: /Discrete_Mathematics/chapter3.md
     - title: 数论
-      url: /Discrete_Mathematics/chapter4/
+      url: /Discrete_Mathematics/chapter4.md
     - title: 归纳与递归
-      url: /Discrete_Mathematics/chapter5/
+      url: /Discrete_Mathematics/chapter5.md
     - title: 计数
-      url: /Discrete_Mathematics/chapter6/
+      url: /Discrete_Mathematics/chapter6.md
     - title: 高级计数
-      url: /Discrete_Mathematics/chapter8/
+      url: /Discrete_Mathematics/chapter8.md
     - title: 关系
-      url: /Discrete_Mathematics/chapter9/
+      url: /Discrete_Mathematics/chapter9.md
     - title: 图
-      url: /Discrete_Mathematics/chapter10/
+      url: /Discrete_Mathematics/chapter10.md
     - title: 树
-      url: /Discrete_Mathematics/chapter11/
+      url: /Discrete_Mathematics/chapter11.md
 
 - title: mkdocs
   children:
     - title: 主题
-      url: /mkdocs/theme/
+      url: /mkdocs/theme.md
     - title: Latex
-      url: /mkdocs/Latex/
+      url: /mkdocs/Latex.md
