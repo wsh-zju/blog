@@ -8,6 +8,8 @@ categories: 学习记录
 
 # <i class="fa-solid fa-robot"></i> 人工智能引论
 
+你好
+
 !!! tip "Tips"
     主要是考前整理了一下ppt上的内容（好多，记不住www
 
