@@ -23,11 +23,10 @@ jobs:
           cd themes/icarus && npm install && cd ../..
 
       - name: Generate Static Files
-        run: hexo generate
+        run: npx hexo generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public  # 把生成的 public 文件夹部署到 gh-pages 分支
-          
