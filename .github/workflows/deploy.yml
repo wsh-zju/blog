@@ -20,6 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
+          npm install hexo-theme-icarus
           # 确保主题目录下的依赖也已安装
           if test -d "themes/icarus"; then
             cd themes/icarus && npm install && cd ../..
