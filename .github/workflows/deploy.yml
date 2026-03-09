@@ -21,7 +21,7 @@ jobs:
         run: |
           npm install
           # 确保主题目录下的依赖也已安装
-          [ -d "themes/icarus && cd themes/icarus && npm install 
+          [ -d "themes/icarus"] && cd themes/icarus && npm install 
 
       - name: Generate site
         run: |

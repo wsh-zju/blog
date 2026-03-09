@@ -1,13 +1,6 @@
-# ... (中间的其他配置保持不变)
-
-# Extensions
-theme: icarus
-
-# 网站配置
+theme: landscape
 url: https://wsh-zju.github.io/blog/
 root: /blog/
-
-# Deployment
 deploy:
   type: git
   repo: https://github.com/wsh-zju/blog.git
