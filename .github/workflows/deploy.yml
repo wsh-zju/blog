@@ -3,30 +3,33 @@ name: Deploy Hexo Blog
 on:
   push:
     branches:
-      - main  # 当你向 main 分支推送代码时触发
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout source
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js 16
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '16'
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
           npm install
-          cd themes/icarus && npm install && cd ../..
+          # 确保主题目录下的依赖也已安装
+          if [ -d "themes/icarus" ]; then
+            cd themes/icarus && npm install && cd ../..
+          fi
 
-      - name: Generate Static Files
+      - name: Generate site
         run: npx hexo generate
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # 把生成的 public 文件夹部署到 gh-pages 分支
+          publish_dir: ./public
