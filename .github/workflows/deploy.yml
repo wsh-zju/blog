@@ -21,12 +21,15 @@ jobs:
         run: |
           npm install
           # 确保主题目录下的依赖也已安装
-          if [ -d "themes/icarus" ]; then
-            cd themes/icarus && npm install && cd ../..
-          fi
+          [ -d "themes/icarus && cd themes/icarus && npm install 
 
       - name: Generate site
-        run: npx hexo generate
+        run: |
+            npx hexo clean
+            npx hexo generate
+    
+      - name: List files for debug
+        run: ls -R public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
