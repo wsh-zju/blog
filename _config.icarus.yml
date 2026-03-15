@@ -98,15 +98,32 @@ search:
 comment:
     type: giscus
     repo: wsh-zju/blog
-    repo_id: 'R_kgDORh7QKg'          # Giscus 官网生成的 ID
-    category: 'General'      # 建议设为 Announcements 或 General
-    category_id: 'DIC_kwDORh7QKs4C4Anb'    # Giscus 官网生成的 ID
-    mapping: 'pathname'              # 评论映射方式，推荐 pathname
+    repo_id: R_kgDORh7QKg         # Giscus 官网生成的 ID
+    category: General      # 建议设为 Announcements 或 General
+    category_id: DIC_kwDORh7QKs4C4Anb    # Giscus 官网生成的 ID
+    mapping: pathname              # 评论映射方式，推荐 pathname
     reactions_enabled: 1           # 开启表情反馈
     emit_metadata: 0
-    input_position: 'bottom'         # 评论框位置
-    lang: 'zh-CN'                    # 语言设置为中文
-    theme: 'preferred_color_scheme'  # 自动跟随系统主题
+    input_position: bottom         # 评论框位置
+    lang: zh-CN                    # 语言设置为中文
+    theme: preferred_color_scheme  # 自动跟随系统主题
+
+
+    #<script src="https://giscus.app/client.js"
+    #        data-repo="wsh-zju/blog"
+    #        data-repo-id="R_kgDORh7QKg"
+    #        data-category="General"
+    #        data-category-id="DIC_kwDORh7QKs4C4Anb"
+    #        data-mapping="pathname"
+    #        data-strict="1"
+    #        data-reactions-enabled="1"
+    #        data-emit-metadata="0"
+    #        data-input-position="bottom"
+    #        data-theme="preferred_color_scheme"
+    #        data-lang="zh-CN"
+    #        crossorigin="anonymous"
+    #        async>
+    #</script>
 donates:
     -
         type: alipay

@@ -66,7 +66,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 3. **保存并退出**：按下 `Ctrl + O` 保存 -> 回车确认 -> `Ctrl + X` 退出。
 
-> **⚠️ 温馨提示**：修改 `.zshrc` 时，请注意不要覆盖原有的环境变量或 alias 配置，建议操作前先执行 `cp ~/.zshrc ~/.zshrc.bak` 进行备份。
+> **温馨提示**：修改 `.zshrc` 时，请注意不要覆盖原有的环境变量或 alias 配置，建议操作前先执行 `cp ~/.zshrc ~/.zshrc.bak` 进行备份。
 
 ---
 
