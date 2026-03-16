@@ -22,13 +22,5 @@ deploy:
   repo: https://github.com/wsh-zju/blog.git
   branch: gh-pages
 
-fonts:
-  family:
-    # serif: 衬线体用于特定强调，保持经典
-    serif: "Noto Serif SC, Georgia, serif"
-    # sans-serif: 现代无衬线体，Inter 是目前的 UI 设计标准
-    sans-serif: "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif"
-    # monospace: 编程字体王者 JetBrains Mono，阅读代码极度舒适
-    monospace: "'JetBrains Mono', 'Fira Code', 'Source Code Pro', monospace"
 comment:
   type: true

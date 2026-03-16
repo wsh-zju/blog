@@ -47,6 +47,8 @@ head:
         - ''
     # 网站 RSS atom.xml 的 URL 或路径
     rss: 
+    - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap">
+    - <link rel="stylesheet" href="/blog/css/custom.css">
 # 页面顶部导航栏配置
 navbar:
     # 导航菜单项
@@ -72,6 +74,7 @@ footer:
             url: https://github.com/wsh-zju/blog
 # 文章相关配置
 article:
+    font_family: 'ZCOOL XiaoWei'
     # 代码高亮设置
     highlight:
         theme: atom-one-light   # 代码高亮主题
@@ -158,6 +161,9 @@ widgets:
             Github:
                 icon: fab fa-github
                 url: https://github.com/wsh-zju
+            Notebook:
+                icon: fas fa-book
+                url: https://wsh-zju.github.io/notebook/
     # 文章目录组件配置
     -
         position: right
@@ -209,8 +215,9 @@ plugins:
     outdated_browser: true
     pjax: true
     progressbar: true
+
 # CDN 提供商设置
 providers:
     cdn: jsdelivr
-    fontcdn: google
+    font: google
     iconcdn: fontawesome
