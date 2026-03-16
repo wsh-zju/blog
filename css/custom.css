@@ -1,0 +1,12 @@
+/* 引入站酷小薇体 */
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+/* 全局正文和标题使用站酷小薇体 */
+body, .title, .content, .article-title {
+    font-family: 'ZCOOL XiaoWei', serif !important;
+}
+
+/* 保持代码字体为等宽，避免错位 */
+code, pre, .highlight {
+    font-family: 'JetBrains Mono', 'Consolas', monospace !important;
+}
