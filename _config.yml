@@ -7,9 +7,10 @@ language: zh-CN
 timezone: 'Asia/Shanghai'
 theme: icarus
 
-url: https://wsh-zju.github.io/blog/
+url: https://wsh-zju.github.io
 root: /blog/
 permalink: :year/:month/:day/:title/ # 这种结构最利于 SEO
+post_asset_folder: true
 
 index_generator:
   path: ''
@@ -24,3 +25,7 @@ deploy:
 
 comment:
   type: true
+
+marked:
+  prependRoot: true
+  postAsset: true
