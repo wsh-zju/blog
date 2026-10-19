@@ -5,9 +5,9 @@ description: '记录算法、架构与工程实践的个人知识库'
 author: Lucy Wisteria
 language: zh-CN
 timezone: 'Asia/Shanghai'
-theme: icarus
+theme: flatpaper
 
-url: https://wsh-zju.github.io
+url: https://wsh-zju.github.io/blog
 root: /blog/
 permalink: :year/:month/:day/:title/ # 这种结构最利于 SEO
 post_asset_folder: true
@@ -23,8 +23,15 @@ deploy:
   repo: https://github.com/wsh-zju/blog.git
   branch: gh-pages
 
-comment:
-  type: true
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
+  content: true
+
+sitemap:
+  path: sitemap.xml
 
 marked:
   prependRoot: true

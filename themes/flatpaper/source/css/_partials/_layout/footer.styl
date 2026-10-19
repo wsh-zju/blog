@@ -1,0 +1,74 @@
+/* ============== FOOTER ============== */
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 36px;
+  margin-bottom: 24px;
+  padding: 18px 0 0;
+  border-top: 1px dashed var(--dash);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.site-footer__left { text-align: left; }
+
+/* anzhiyu-style typewriter next to the copyright line */
+.site-footer__typed {
+  margin-left: 8px;
+  color: var(--color-accent-strong);
+}
+
+.site-footer__typed .typed-cursor {
+  opacity: 0.8;
+}
+
+/* Keep footer icons (e.g. FA CC marks) aligned with adjacent text:
+   the global .lucide rule forces 16px + middle, which sits low on the
+   text baseline; match the footer font-size (1em) and center the icon
+   in an inline-flex container so it tracks the text box exactly. */
+.site-footer a .flatpaper-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+}
+
+.site-footer a.site-footer__icon-link {
+  display: inline-flex;
+  align-items: center;
+  height: 1.8em; /* matches the footer line-height */
+  vertical-align: bottom;
+}
+
+.site-footer__right {
+  display: grid;
+  justify-items: end;
+  gap: 2px;
+  text-align: right;
+}
+
+.site-footer__row {
+  display: block;
+}
+
+.site-footer__separator {
+  opacity: 0.68;
+}
+
+.site-footer a {
+  transition: color 0.15s ease;
+}
+
+.site-footer a:hover {
+  color: var(--color-accent-strong);
+}
+
+.dark-mode .site-footer a:hover {
+  color: var(--color-accent-muted);
+}
+
+[hidden] {
+  display: none !important;
+}

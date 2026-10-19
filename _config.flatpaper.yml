@@ -1,0 +1,87 @@
+# 站点专属配置；未列出的选项使用 themes/flatpaper/_config.yml 默认值。
+menu:
+  首页:
+    link: /
+    icon: home
+  归档:
+    link: /archives/
+    icon: archive
+  分类:
+    link: /categories/
+    icon: folder
+  标签:
+    link: /tags/
+    icon: tag
+  关于:
+    link: /about/
+    icon: user
+
+favicon: /images/favicon_io/favicon.ico
+color: purple
+profile:
+  role: Computer Sciences & Engineering
+  bio: 记录算法、架构与工程实践的个人知识库
+  avatar: /images/logo.png
+  avatar_shape: circle
+  site_info:
+    posts: /archives/
+    categories: /categories/
+    tags: /tags/
+  social:
+    GitHub: https://github.com/wsh-zju
+    Notebook:
+      url: https://wsh-zju.github.io/notebook/
+      icon: book-open
+      tooltip: Notebook
+  rss:
+    enable: true
+    path: /atom.xml
+
+welcome:
+  label: 学习与记录
+  title: 把知识，慢慢写下来
+  text: 记录算法、架构与工程实践，收藏每一次探索与思考。
+  cta_text: 浏览归档
+  cta_link: /archives/
+
+featured:
+  - Git 官方教程
+featured_autoplay: 5000
+latest_posts:
+  enable: true
+  limit: 5
+
+reactions:
+  custom:
+    - type: image
+      name: 微信赞赏
+      icon: weixin
+      image: /images/wechat.png
+    - type: image
+      name: 支付宝
+      icon: alipay
+      image: /images/alipay.jpg
+
+google_analytics:
+  enable: true
+  measurement_id: G-2C17YF7K0L
+
+# 由 scripts/giscus.js 接入，保持原有的 pathname 评论映射。
+comments: giscus
+giscus:
+  repo: wsh-zju/blog
+  repo_id: R_kgDORh7QKg
+  category: General
+  category_id: DIC_kwDORh7QKs4C4Anb
+  mapping: pathname
+  reactions_enabled: '1'
+  emit_metadata: '0'
+  input_position: bottom
+  lang: zh-CN
+  theme: preferred_color_scheme
+
+footer:
+  left: '© {year} Lucy Wisteria'
+  links:
+    - name: GitHub
+      link: https://github.com/wsh-zju/blog

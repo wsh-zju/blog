@@ -1,0 +1,34 @@
+// AdSense slot wrapper. Renders only when the slot is configured.
+// The <ins.adsbygoogle> already declares display:block — we just give the
+// wrapper breathing room so an unfilled slot doesn't visually collapse
+// against neighboring content during fill.
+
+.ad-slot
+  display: block
+  margin: 1.5rem 0
+  text-align: center
+  min-height: 1px
+
+.ad-slot ins.adsbygoogle
+  display: block
+  margin: 0 auto
+
+.ad-slot--post-top
+  margin-top: 1rem
+  margin-bottom: 1.75rem
+
+.ad-slot--post-bottom
+  margin-top: 1.75rem
+  margin-bottom: 1.25rem
+
+.paper-sidebar .ad-slot--sidebar
+  margin: 1rem 0 0
+
+// Auto ads placed directly under <body> default to inline `width: 100%`,
+// spanning the side gutters. AdSense side rails probe those gutters and
+// slide away / hide whenever such a banner scrolls into view, so keep it
+// within the content column on viewports wide enough for side rails.
+@media (min-width: 1200px)
+  body > .google-auto-placed
+    width: unquote('min(94vw, 1300px)') !important
+    margin-inline: auto !important
